@@ -5,18 +5,18 @@ class JsondtoConan(ConanFile):
     name = "json-dto"
     version = "0.2.8"
     license = "BSD-3-Clause"
-    author = "Nicolai Grodzitski utromvecherom@gmail.com"
+    author = "Stiffstream info@stiffstream.com"
     url = "https://github.com/Stiffstream/json_dto-conan"
     description = "A small header-only helper for converting data between json representation and c++ structs"
-    topics = ("JSON", "DTO")
+    topics = ("JSON", "DTO", "Serialization")
     settings = "os", "compiler", "build_type", "arch"
     generators = "cmake"
     source_subfolder = "json_dto"
-    
+
     requires = "rapidjson/1.1.0@bincrafters/stable"
 
     def source(self):
-	# https://github.com/Stiffstream/json_dto/archive/v.0.2.8.tar.gz
+        # https://github.com/Stiffstream/json_dto/archive/v.0.2.8.tar.gz
         source_url = "https://github.com/Stiffstream/json_dto/archive"
         tools.get("{0}/v.{1}.tar.gz".format(source_url, self.version))
         extracted_dir = "json_dto-v." + self.version

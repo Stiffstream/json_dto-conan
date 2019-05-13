@@ -26,11 +26,12 @@ conan install PROJECT_PATH --build=missing
 
 ## Adding json_dto to your CMakeLists.txt
 
-```
+One of the following approaches can be used:
+
+```cmake
 # 1. Find and add dependency.
 find_package(json_dto CONFIG REQUIRED)
 target_link_libraries(your_target json-dto::json-dto)
-
 
 # 2. Setting up dependencies with Conan
 target_link_libraries(your_target ${CONAN_LIBS})

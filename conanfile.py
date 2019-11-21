@@ -3,7 +3,7 @@ import os
 
 class JsondtoConan(ConanFile):
     name = "json-dto"
-    version = "0.2.8"
+    version = "0.2.9.1"
     license = "BSD-3-Clause"
     author = "Stiffstream info@stiffstream.com"
     url = "https://github.com/Stiffstream/json_dto-conan"

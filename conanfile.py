@@ -3,7 +3,7 @@ import os
 
 class JsondtoConan(ConanFile):
     name = "json-dto"
-    version = "0.2.9.1"
+    version = "0.2.10"
     license = "BSD-3-Clause"
     author = "Stiffstream info@stiffstream.com"
     url = "https://github.com/Stiffstream/json_dto-conan"
@@ -13,7 +13,7 @@ class JsondtoConan(ConanFile):
     generators = "cmake"
     source_subfolder = "json_dto"
 
-    requires = "rapidjson/1.1.0@bincrafters/stable"
+    requires = "rapidjson/1.1.0"
 
     def source(self):
         # https://github.com/Stiffstream/json_dto/archive/v.0.2.8.tar.gz
